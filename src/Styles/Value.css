@@ -1,0 +1,85 @@
+.v-container {
+  justify-content: center;
+}
+
+.v-container .image-container {
+  border: 8px solid rgb(232 232 232 / 93%);
+}
+
+.v-container > div {
+  flex: 1;
+}
+
+.right-value {
+  gap: 0.5rem;
+}
+.icon {
+  justify-content: center;
+}
+
+.accordion-container {
+  margin-top: 2rem;
+  border: none;
+}
+
+.accordion-item {
+  background: white;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.3rem;
+  box-shadow: 2px 4px #888888;
+}
+/* .accordion-item.expanded{
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+} */
+
+.accordion-button {
+  justify-content: space-between;
+  cursor: pointer;
+  background: white;
+  padding: 0.8rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.icon {
+  padding: 10px;
+  border-radius: 5px;
+  background: #eeeeff;
+  /* color: blue; */
+}
+
+.icon > svg {
+  fill: var(--blue);
+}
+
+.accordion-button > .primaryText {
+  font-size: 1.3rem;
+}
+
+@media (max-width:500px){
+  .v-container{
+    flex-direction: column;
+  }
+
+  .left-value{
+    display: flex;
+    width: 96%;
+    height:96%;
+    justify-content: center;
+  }
+  .image-container>.img{
+    width: 100%;
+  }
+  /* .accordion-button:nth-child(2){
+    font-size: 1.3rem;
+  } */
+
+  @media (max-width:700px){
+    .accordion-button>.primaryText{
+      font-size: 0.8rem;
+    }
+  }
+}

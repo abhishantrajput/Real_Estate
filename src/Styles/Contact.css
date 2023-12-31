@@ -1,0 +1,144 @@
+.contact-container {
+  justify-content: space-between;
+  /* flex: 1; */
+}
+.left-contact {
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.right-contact {
+  flex: 1;
+  width: 100%;
+}
+
+.mode {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-modes {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.contact-modes > .row {
+  gap: 1.5rem;
+}
+.mode {
+  width: 16rem;
+  padding: 1rem;
+  border: 0.8px  solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+
+  transition: all 300ms ease-in;
+}
+
+.mode>.btn{
+    width: 95%;
+    padding: 0.4rem 1rem;
+    justify-content: center;
+    color: blue;
+    letter-spacing: 3px;
+    background: var(--lightBlue);
+}
+
+.mode.flexStart{
+    justify-content: space-between;
+}
+
+.mode1{
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.detail>:nth-child(1){
+    /* font-size: 1.7rem; */
+    font-size: 1.5rem;
+    width: 100%;
+}
+.mode:hover{
+    scale: 1.1;
+    box-shadow: var(--shadow);
+}
+
+.mode>.btn:hover{
+    background: var(--blue-gradient);
+    color: white;
+    scale: 0.8;
+}
+/* right-side css */
+
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.right-contact{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-contact>.image-container{
+  border: 8px solid rgb(232 232 232 / 93%);
+}
+
+@media(max-width:500px){
+  .left-contact{
+    justify-content: center;
+    align-items: center;
+  }
+  .left-contact>.secondaryText{
+    width: 80%;
+    text-align: justify;
+
+  }
+
+  .contact-container{
+    flex-direction: column;
+  }
+
+  .contents{
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+  .contact-modes{
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-modes>.row{
+    /* width: 90%; */
+    justify-content: center;
+  }
+
+  .move.btn{
+    width: 100%;
+  }
+
+  .left-contact>.orangeText{
+    /* justify-self: flex-start; */
+    /* align-self: flex-start; */
+    display: flex;
+    justify-self: flex-start;
+    
+  }
+  .left-contact>.secondaryText{
+    justify-self:flex-start ;
+    /* align-self: flex-start; */
+    display: flex;
+
+  }
+
+  .right-contact{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+
+  .right-contact>.image-container{
+    width: 95%;
+    height: 25rem;
+  }
+}
